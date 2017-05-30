@@ -1,8 +1,0 @@
-{application,ekvs,
-             [{description,"Erlang Key/Value Store"},
-              {vsn,"0.0.1"},
-              {registered,[]},
-              {applications,[kernel,stdlib]},
-              {mod,{ekvs,[]}},
-              {env,[{log_level,info}]},
-              {modules,[ekvs,kvs_server]}]}.
