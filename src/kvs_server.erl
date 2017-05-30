@@ -13,7 +13,7 @@ start_link() ->
     gen_server:start_link({local, ?MODULE}, ?MODULE, [], []).
 
 put(Key, Value) ->
-    error_logger:info_msg("putting to kvs server: ~p/~p~n", [Key, Value]),
+    error_logger:info_msg("putting into kvs server: ~p/~p~n", [Key, Value]),
     gen_server:call(?MODULE, {put, Key, Value}).
 
 get(Key) ->
