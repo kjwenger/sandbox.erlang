@@ -33,7 +33,6 @@ handle_call({put, Key, Value}, _From, #state{tab = Tab} = State) ->
 handle_call({get, Key}, _From, #state{tab = Tab} = State) ->
     Reply = ets:lookup(Tab, Key),
     case Reply of
-        [] -> {reply, not_found, State};
         [{Key, Value}] -> {reply, Value, State};
         _ -> {reply, not_found, State}
     end;
