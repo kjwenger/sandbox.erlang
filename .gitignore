@@ -3,3 +3,5 @@
 /.project
 /rebar.lock
 /ebin/
+/eunit/
+/.idea/workspace.xml
